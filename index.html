@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دستورهای غذای ایرانی</title>
+  <meta name="description" content="دستورهای ساده و خوشمزه‌ی غذای ایرانی (آشپزی فارسی)" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="./index.html">🍲 دستورهای ایرانی</a>
+
+      <nav class="menu">
+        <a href="#recipes">دستورها</a>
+        <a href="#about">درباره</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>آشپزی ایرانی، ساده و مرحله‌به‌مرحله</h1>
+          <p class="muted">
+            اینجا می‌تونی دستورهای محبوب ایرانی رو با توضیح کوتاه، مواد لازم، و مراحل دقیق پیدا کنی.
+          </p>
+
+          <div class="search">
+            <input id="searchInput" type="search" placeholder="جستجو: قورمه‌سبزی، ته‌دیگ، فسنجان..." />
+          </div>
+
+          <div class="chips">
+            <button class="chip" data-tag="خورشت">خورشت</button>
+            <button class="chip" data-tag="برنج">برنج</button>
+            <button class="chip" data-tag="مجلسی">مجلسی</button>
+            <button class="chip" data-tag="سریع">سریع</button>
+            <button class="chip chip-ghost" id="clearFilters">پاک کردن فیلتر</button>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>✨ پیشنهاد امروز</h2>
+          <p>ته‌دیگ طلایی با نکات مهم برای ترد شدن</p>
+          <a class="btn" href="./recipes/tahdig.html">دیدن دستور ته‌دیگ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipes" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>دستورها</h2>
+          <p class="muted">روی هر دستور کلیک کن تا صفحه‌ی کاملش باز بشه.</p>
+        </div>
+
+        <div id="recipeGrid" class="grid">
+          <a class="card" href="./recipes/ghormeh-sabzi.html" data-tags="خورشت,مجلسی" data-title="قورمه‌سبزی">
+            <div class="card-top">
+              <div class="badge">خورشت</div>
+              <div class="time">⏱ ۲ ساعت</div>
+            </div>
+            <h3>قورمه‌سبزی</h3>
+            <p class="muted">خورشت کلاسیک با لوبیا قرمز و لیمو عمانی.</p>
+          </a>
+
+          <a class="card" href="./recipes/fesenjan.html" data-tags="خورشت,مجلسی" data-title="فسنجان">
+            <div class="card-top">
+              <div class="badge">خورشت</div>
+              <div class="time">⏱ ۱٫۵ تا ۲ ساعت</div>
+            </div>
+            <h3>فسنجان</h3>
+            <p class="muted">خورشت گردو و رب انار با طعم ترش یا ملس.</p>
+          </a>
+
+          <a class="card" href="./recipes/tahdig.html" data-tags="برنج,سریع" data-title="ته‌دیگ">
+            <div class="card-top">
+              <div class="badge">برنج</div>
+              <div class="time">⏱ ۶۰ دقیقه</div>
+            </div>
+            <h3>ته‌دیگ</h3>
+            <p class="muted">ترفندهای طلایی برای ته‌دیگ ترد و خوش‌رنگ.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <h2>درباره این سایت</h2>
+        <p class="muted">
+          این سایت یک مجموعه‌ی کوچک از دستورهای غذای ایرانیه. اگر دوست داری، می‌تونی دستورهای جدید اضافه کنی و
+          عکس هم بذاری.
+        </p>
+        <p class="muted small">
+          ساخته شده با HTML/CSS/JS و قابل میزبانی روی GitHub Pages.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> دستورهای غذای ایرانی</span>
+      <span class="muted">ساخته‌شده با عشق 💛</span>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
